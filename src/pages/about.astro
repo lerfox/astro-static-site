@@ -1,24 +1,16 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro"
+import '../styles/global.css'
 const pageTitle = "I am LERRMAN"
 ---
 
-<body>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/hobbies">Hobbies</a>
-  <h1>{pageTitle}</h1>
-  <p>My name is Luis and I build my first Astro project using <a href="https://www.ceos3c.com">ceos3c.com</a> </p>
-</body>
+<MainLayout title="I am LERRMAN">
 
-<style>
-  body{
-    font-family: sans-serif;
-  }
-  a{
-    color: orange;
-    text-decoration: none;
-  }
-  a:hover{
-    text-decoration: underline;
-  }
-</style>
+  <p>
+    My name is Luis and I build my first Astro project using <a     href="https://www.ceos3c.com">ceos3c.com</a> 
+  </p>
+
+</MainLayout>
+
+
+
